@@ -94,7 +94,7 @@
 
   </nav>
 
-  <!-- Destaque -->
+  <!-- Topo -->
   <div class="container-fluid main-title-bg" style="padding-bottom: 2rem; border-color:#34c1ad;">
     <!-- PAGE.TITLE -->
     <div class="main-title">
@@ -108,35 +108,86 @@
     </div>
   </div>
 
+  <!-- Main Card with all data -->
   <div class="card">
 
-    <!-- GRAVES.CARD Vai ser Evolução em Uberaba-->
-    <div class="card">
+    <!-- UBERABA.CARD Vai ser Evolução em Uberaba-->
+    <div class="card" id="uberaba">
       <div class="card-body">
 
         <!-- CARD.HEADER -->
         <div class="media">
-          <!--img src="./img/icon_sick_bed.svg" width=48px alt="Menino com garganta tossindo" class="card-icon index-icon"-->
           <!-- CARD.TITLE.ICON -->
           <div class="media-body">
             <!--a href="./municipios.html?aba=aba1" class="text-reset"-->
               <!-- CARD.TITLE.TEXT -->
-              <h2 class="display" id="uberaba">Casos de Uberaba</h2>
+              <h2 class="display">Casos de Uberaba</h2>
             <!--/a-->
-            <p class="card-text">Quantos casos graves (hospitalizações) temos hoje na cidade de São Paulo?</p>
+            <p class="card-text">Dados e projeções para o município de Uberaba.</p>
             <!-- CARD.TITLE.DESCRIPTION -->
           </div>
         </div>
 
+        <!-- Casos acumulados -->
+        <div class="media-body">
+            <h3 class="card-title">Quantos casos de Covid-19 temos no município de Uberaba?</h3>
+        </div>
+
+        <p class="text-justify mt-3">
+            <ul>
+            <li>No dia de hoje, acumulamos 138 casos notificados.</li>
+            <li>Projeção para dia 29 de Maio: entre 120 e 266 casos notificados.</li>
+            </ul>
+        </p>
+
         <!-- CARD.IMAGE -->
         <!--a href="./municipios.html"-->
-        <img src="./web/plot.nowcast.cum.svg" class="card-img-top mt-3"
-            alt="Gŕafico mostrando a porcentagem de ocupação de leitos e o limite do sistema de saúde indicado">
+        <img src="./web/municipios/MG/Uberaba/plot.nowcast.cum.png" class="card-img-top mt-3" alt="Gŕafico mostrando o número de casos acumulados na cidade de Uberaba.">
+        <p class="small">
+            Estimativas de crescimento exponencial para os próximos 5 dias para o Município de Uberaba.
+        </p>
         <!--/a-->
         <!-- CARD.TEXT -->
         <p class="text-justify mt-3">
-          Estimamos o número de casos graves usando os dados de notificação de hospitalizações por SRAG (Síndrome
-          Respiratória Aguda Grave) da base SIVEP-Gripe corrigindo atrasos, para o município de São Paulo. Projeções para os próximos 5 dias.
+          <ul class="small">
+          <li>Pontos pretos: número de casos confirmados a cada dia.</li>
+          <li>Pontos laranjas: a previsão para os próximos 5 dias.</li>
+          <li>Cinza: intervalo de confiança dessa previsão.</li>
+          </ul>
+        </p>
+        <p class="text-justify mt-3">
+          É mostrado o número de casos acumulados para o município de Uberaba, MG.
+          As projeções são estimadas para os próximos 5 dias.
+        </p>
+
+        <!-- Número reprodutivo -->
+        <div class="media-body">
+            <h3 class="card-title">Quantas pessoas um infectado contamina na cidade de Uberaba?</h3>
+        </div>
+
+        <p class="text-justify mt-3">
+            <ul>
+            <li>Uma pessoa infectada está contaminando 1.47 pessoas.</li>
+            </ul>
+        </p>
+
+        <!-- CARD.IMAGE -->
+        <!--a href="./municipios.html"-->
+        <img src="./web/municipios/MG/Uberaba/plot_estimate_R0_covid.svg" class="card-img-top mt-3" alt="Gŕafico mostrando o número reprodutivo efetivo (Re) para o Município de Uberaba.">
+        <p class="small">
+            Número reprodutivo efetivo (Re) para o Município de Uberaba.
+        </p>
+        <!--/a-->
+        <!-- CARD.TEXT -->
+        <p class="text-justify mt-3">
+          <ul class="small">
+          <li>Linha roxa: estimativa de Re em intervalos de 7 dias.</li>
+          <li>Faixa cinza: intervalo de confiança das estimativas.</li>
+          <li>Linha vermelha: Re = 1.</li>
+          </ul>
+        </p>
+        <p class="text-justify mt-3">
+          O número Reprodutivo efetivo (Re) é a média de pessoas contaminadas por um infectado. Valores maiores que 1 indicam que o número de novos casos está aumentando, limite marcado pela linha vermelha. Valores próximos de um indicam um número constante de casos a cada dia. Apenas valores de Re abaixo de um por muitos dias indicam tendência de redução no número de casos. O intervalo de confiança (faixa cinza) tem 95% de chance de incluir o valor real de Re. Os valores de Re da epidemia de Covid-19 baseando-se nos dados estimados de casos graves.
         </p>
 
         <!-- CARD.BUTTON >
@@ -149,53 +200,68 @@
       </div>
     </div>
 
-    <!-- GRAVES.CARD Vai ser Evolução em Minas-->
-    <div class="card">
+    <!-- MINAS.CARD Vai ser Evolução em Minas-->
+    <div class="card" id="minas">
       <div class="card-body">
 
         <!-- CARD.HEADER -->
         <div class="media">
-          <!--img src="./img/icon_sick_bed.svg" width=48px alt="Menino com garganta tossindo" class="card-icon index-icon"-->
           <!-- CARD.TITLE.ICON -->
           <div class="media-body">
             <!--a href="./municipios.html?aba=aba1" class="text-reset"-->
               <!-- CARD.TITLE.TEXT -->
-              <h2 class="display" id="minas">Casos de Minas</h2>
+              <h2 class="display">Casos de Minas Gerais</h2>
             <!--/a-->
-            <p class="card-text">Quantos casos graves (hospitalizações) temos hoje na cidade de São Paulo?</p>
+            <p class="card-text">Dados e projeções para o Estado de Minas Gerais.</p>
             <!-- CARD.TITLE.DESCRIPTION -->
           </div>
         </div>
 
+        <!-- Casos acumulados -->
+        <div class="media-body">
+            <h3 class="card-title">Quantos casos de Covid-19 temos no Estado de Minas?</h3>
+        </div>
+
+        <p class="text-justify mt-3">
+            <ul>
+            <li>No dia de hoje, acumulamos 6668 casos notificados.</li>
+            <li>Projeção para dia 29 de Maio: entre 8483 e 9519 casos notificados.</li>
+            </ul>
+        </p>
+
         <!-- CARD.IMAGE -->
-        <!--a href="./municipios.html"-->
-        <img src="./web/plot.forecast.exp.br.sm.svg" class="card-img-top mt-3"
-            alt="Gŕafico mostrando a porcentagem de ocupação de leitos e o limite do sistema de saúde indicado">
+        <!--a href="./Estados.html"-->
+        <img src="./web/plot.forecast.exp.mg.png" class="card-img-top mt-3" alt="Gŕafico mostrando o número de casos acumulados na cidade de Uberaba.">
+        <p class="small">
+            Estimativas de crescimento exponencial para os próximos 5 dias para o Estado de Minas Gerais.
+        </p>
         <!--/a-->
         <!-- CARD.TEXT -->
         <p class="text-justify mt-3">
-          Estimamos o número de casos graves usando os dados de notificação de hospitalizações por SRAG (Síndrome
-          Respiratória Aguda Grave) da base SIVEP-Gripe corrigindo atrasos, para o município de São Paulo. Projeções para os próximos 5 dias.
+          <ul class="small">
+          <li>Pontos pretos: número de casos confirmados a cada dia.</li>
+          <li>Pontos laranjas: a previsão para os próximos 5 dias.</li>
+          <li>Cinza: intervalo de confiança dessa previsão.</li>
+          </ul>
+        </p>
+        <p class="text-justify mt-3">
+          É mostrado o número de casos acumulados para o Estado de Minas Gerais.
+          As projeções são estimadas para os próximos 5 dias.
         </p>
 
-        <!-- CARD.BUTTON >
-        <div class="text-center">
-        <a href="./municipios.html"><button class="btn btn-primary btn-center mt-1" type="button">
-            Saiba mais
-        </button></a>
-        </div-->
-
+        <!-- Número reprodutivo não tem pronto -->
+        
       </div>
     </div>
 
 
     <!-- Sobre -->
-    <div class="card">
+    <div class="card" id="sobre">
 
         <div class="container-fluid main-title-bg mb-4" style="padding-bottom: 2rem; margin-top: 2rem!important;">
         <!-- PAGE.TITLE -->
             <div class="main-title align-items-center" style="flex-direction: row!important;">
-                <h1 class="display" id="sobre">Sobre</h1>
+                <h1 class="display">Sobre</h1>
             </div>
         </div>
 
@@ -287,6 +353,10 @@ href="https://statcounter.com/" target="_blank"><img class="statcounter"
 src="https://c.statcounter.com/12330931/0/8e736809/1/" alt="Web
 Analytics"></a></div></noscript>
 <!-- End of Statcounter Code -->
+
+<!-- SCRIPT PARA USAR MATHJAX E ESCREVER EQUAÇÕES -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 
 </body>
 
