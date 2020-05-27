@@ -74,16 +74,16 @@
     <div class="navbar-collapse main-menu-item collapse" id="navbarSupportedContent">
       <ul class="navbar-nav d-md-inline-flex"> <!--mr-auto-->
         <li class="nav-item">
-          <a class="nav-link active" href="#uberaba">Uberaba</a>
+          <a class="nav-link" href="./index.html#uberaba">Uberaba</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#minas">Minas</a>
+          <a class="nav-link" href="./index.html#minas">Minas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#brasil">Brasil</a>
+          <a class="nav-link" href="./index.html#brasil">Brasil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./covid.html">COVID19</a>
+          <a class="nav-link active" href="./covid.html">COVID19</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./modelos.html">Modelos</a>
@@ -98,24 +98,22 @@
   </nav>
 
   <!-- Topo -->
-  <div class="container-fluid main-title-bg" style="padding-bottom: 2rem; border-color:#34c1ad;">
-    <!-- PAGE.TITLE -->
+  <!--div class="container-fluid main-title-bg" style="padding-bottom: 2rem; border-color:#34c1ad;">
     <div class="main-title">
       <h1 class="display" id="page-title">Observatório Uberaba</h1>
-      <!-- CARD.TEXT -->
       <p class="text-justify">
         Este observatório tem como objetivo auxiliar no monitoramento e planejamento das ações em saúde pública para o combate à pandemia da COVID-19. Os dados são atualizados diariamente.
       </p>
       <br>
       <small class="page-subtitle updateDate ml-2">Última atualização: </small>
     </div>
-  </div>
+  </div-->
 
   <!-- Main Card with all data -->
   <div class="card">
 
-    <!-- UBERABA.CARD Vai ser Evolução em Uberaba-->
-    <div class="card" id="uberaba">
+    <!-- Sobre -->
+    <div class="card">
       <div class="card-body">
 
         <!-- CARD.HEADER -->
@@ -124,34 +122,27 @@
           <div class="media-body">
             <!--a href="./municipios.html?aba=aba1" class="text-reset"-->
               <!-- CARD.TITLE.TEXT -->
-              <h2 class="display">Casos de Uberaba</h2>
+              <h2 class="display">Covid-19</h2>
             <!--/a-->
-            <p class="card-text">Dados e projeções para o município de Uberaba.</p>
+            <p class="card-text">Breve contexto sobre a pandemia.</p>
             <!-- CARD.TITLE.DESCRIPTION -->
           </div>
         </div>
 
-        <!-- Casos acumulados -->
-        <div class="media-body">
+        <!-- Subtitulo caso precise -->
+        <!--div class="media-body">
             <h3 class="card-title">Quantos casos de Covid-19 temos no município de Uberaba?</h3>
-        </div>
-
-        <p class="text-justify mt-3">
-            <ul>
-            <li>No dia de hoje, acumulamos 138 casos notificados.</li>
-            <li>Projeção para dia 29 de Maio: entre 120 e 266 casos notificados.</li>
-            </ul>
-        </p>
+        </div-->
 
         <!-- CARD.IMAGE -->
         <!--a href="./municipios.html"-->
-        <img src="./web/municipios/MG/Uberaba/plot.nowcast.cum.png" class="card-img-top mt-3" alt="Gŕafico mostrando o número de casos acumulados na cidade de Uberaba.">
+        <!--img src="./web/municipios/MG/Uberaba/plot.nowcast.cum.png" class="card-img-top mt-3" alt="Gŕafico mostrando o número de casos acumulados na cidade de Uberaba.">
         <p class="small">
             Estimativas de crescimento exponencial para os próximos 5 dias para o Município de Uberaba.
-        </p>
+        </p-->
         <!--/a-->
         <!-- CARD.TEXT -->
-        <p class="text-justify mt-3">
+        <!--p class="text-justify mt-3">
           <ul class="small">
           <li>Pontos pretos: número de casos confirmados a cada dia.</li>
           <li>Pontos laranjas: a previsão para os próximos 5 dias.</li>
@@ -161,122 +152,21 @@
         <p class="text-justify mt-3">
           É mostrado o número de casos acumulados para o município de Uberaba, MG.
           As projeções são estimadas para os próximos 5 dias.
-        </p>
+        </p-->
 
-        <!-- Número reprodutivo -->
-        <div class="media-body">
-            <h3 class="card-title">Quantas pessoas um infectado contamina na cidade de Uberaba?</h3>
-        </div>
-
-        <p class="text-justify mt-3">
-            <ul>
-            <li>Uma pessoa infectada está contaminando 1.47 pessoas.</li>
-            </ul>
-        </p>
-
-        <!-- CARD.IMAGE -->
-        <!--a href="./municipios.html"-->
-        <img src="./web/municipios/MG/Uberaba/plot_estimate_R0_covid.svg" class="card-img-top mt-3" alt="Gŕafico mostrando o número reprodutivo efetivo (Re) para o Município de Uberaba.">
-        <p class="small">
-            Número reprodutivo efetivo (Re) para o Município de Uberaba.
-        </p>
-        <!--/a-->
         <!-- CARD.TEXT -->
         <p class="text-justify mt-3">
-          <ul class="small">
-          <li>Linha roxa: estimativa de Re em intervalos de 7 dias.</li>
-          <li>Faixa cinza: intervalo de confiança das estimativas.</li>
-          <li>Linha vermelha: Re = 1.</li>
-          </ul>
-        </p>
-        <p class="text-justify mt-3">
-          O número Reprodutivo efetivo (Re) é a média de pessoas contaminadas por um infectado. Valores maiores que 1 indicam que o número de novos casos está aumentando, limite marcado pela linha vermelha. Valores próximos de um indicam um número constante de casos a cada dia. Apenas valores de Re abaixo de um por muitos dias indicam tendência de redução no número de casos. O intervalo de confiança (faixa cinza) tem 95% de chance de incluir o valor real de Re. Os valores de Re da epidemia de Covid-19 baseando-se nos dados estimados de casos graves.
+            <!-- Texto exemplo. TODO: deve ser modificado pois foi extraido do site
+                                        http://www.complex.pfi.uem.br/covid/ -->
+            A COVID-19 é uma doença infecciosa provocada pelo novo coronavírus (SARS-CoV-2). Apesar da crescente quantidade de informação a respeito dessa nova doença, ainda existem muitas incertezas sobre características específicas dessa infecção. Entretanto, sabe-se que o SARS-CoV-2 é um vírus altamente transmissível que pode acarretar altas taxas de hospitalização. O primeiro caso da doença foi identificado na cidade chinesa de Wuhan em 1 de dezembro de 2019. Em 11 de março de 2020, a Organização Mundial da Saúde declarou oficialmente a pandemia (ou seja, uma epidemia de escala global) dessa doença. O primeiro caso de COVID-19 no Brasil foi reportado em 25 de fevereiro de 2020 na cidade de São Paulo e o primeiro caso da doença em Uberaba data de 28 de março de 2020.
+
         </p>
 
-        <!-- CARD.BUTTON >
-        <div class="text-center">
-        <a href="./municipios.html"><button class="btn btn-primary btn-center mt-1" type="button">
-            Saiba mais
-        </button></a>
-        </div-->
-
-      </div>
     </div>
 
-    <!-- MINAS.CARD -->
-    <div class="card" id="minas">
-      <div class="card-body">
-
-        <!-- CARD.HEADER -->
-        <div class="media">
-          <!-- CARD.TITLE.ICON -->
-          <div class="media-body">
-            <!--a href="./municipios.html?aba=aba1" class="text-reset"-->
-              <!-- CARD.TITLE.TEXT -->
-              <h2 class="display">Casos de Minas Gerais</h2>
-            <!--/a-->
-            <p class="card-text">Dados e projeções para o Estado de Minas Gerais.</p>
-            <!-- CARD.TITLE.DESCRIPTION -->
-          </div>
-        </div>
-
-        <!-- Casos acumulados -->
-        <div class="media-body">
-            <h3 class="card-title">Quantos casos de Covid-19 temos no Estado de Minas?</h3>
-        </div>
-
-        <p class="text-justify mt-3">
-            <ul>
-            <li>No dia de hoje, acumulamos 6668 casos notificados.</li>
-            <li>Projeção para dia 29 de Maio: entre 8483 e 9519 casos notificados.</li>
-            </ul>
-        </p>
-
-        <!-- CARD.IMAGE -->
-        <!--a href="./Estados.html"-->
-        <img src="./web/plot.forecast.exp.mg.png" class="card-img-top mt-3" alt="Gŕafico mostrando o número de casos acumulados na cidade de Uberaba.">
-        <p class="small">
-            Estimativas de crescimento exponencial para os próximos 5 dias para o Estado de Minas Gerais.
-        </p>
-        <!--/a-->
-        <!-- CARD.TEXT -->
-        <p class="text-justify mt-3">
-          <ul class="small">
-          <li>Pontos pretos: número de casos confirmados a cada dia.</li>
-          <li>Pontos laranjas: a previsão para os próximos 5 dias.</li>
-          <li>Cinza: intervalo de confiança dessa previsão.</li>
-          </ul>
-        </p>
-        <p class="text-justify mt-3">
-          É mostrado o número de casos acumulados para o Estado de Minas Gerais.
-          As projeções são estimadas para os próximos 5 dias.
-        </p>
-
-        <!-- Número reprodutivo não tem pronto -->
-
-      </div>
-    </div>
-
-    <!-- BRASIL.CARD -->
-
-    <!-- Sobre -->
-    <div class="card">
-        <!-- CARD.IMAGE-->
-        <div class="row">
-            <div class="col-xs-4 col-sm-4">
-                <center><a href="https://ronaldolab.wixsite.com/ronaldolab" target="_blank"><img src="./img/logo_ronaldolab.svg" alt="RonaldoLab" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:90px;"></a></center>
-            </div>
-            <div class="col-xs-4 col-sm-4">
-                <center>
-                <a href="http://www.uftm.edu.br" target="_blank"><img src="./img/logo_uftm.png" alt="UFTM" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:90px;"></a></center>
-            </div>
-            <div class="col-xs-4 col-sm-4">
-                <center>
-                <a href="https://michellimaldo.wixsite.com/meusite" target="_blank"><img src="./img/logo_mai.png" alt="MAI" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:90px;"></a></center>
-            </div>
-        </div>
-    </div>
   </div>
+
+  <br>
 
   <!-- Footer -->
   <footer class="container-fluid">

@@ -74,13 +74,13 @@
     <div class="navbar-collapse main-menu-item collapse" id="navbarSupportedContent">
       <ul class="navbar-nav d-md-inline-flex"> <!--mr-auto-->
         <li class="nav-item">
-          <a class="nav-link active" href="#uberaba">Uberaba</a>
+          <a class="nav-link" href="./index.html#uberaba">Uberaba</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#minas">Minas</a>
+          <a class="nav-link" href="./index.html#minas">Minas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#brasil">Brasil</a>
+          <a class="nav-link" href="./index.html#brasil">Brasil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./covid.html">COVID19</a>
@@ -89,7 +89,7 @@
           <a class="nav-link" href="./modelos.html">Modelos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./sobre.html">Sobre</a>
+          <a class="nav-link active" href="./sobre.html">Sobre</a>
         </li>
         <!-- MENU.ITEM -->
       </ul>
@@ -98,24 +98,22 @@
   </nav>
 
   <!-- Topo -->
-  <div class="container-fluid main-title-bg" style="padding-bottom: 2rem; border-color:#34c1ad;">
-    <!-- PAGE.TITLE -->
+  <!--div class="container-fluid main-title-bg" style="padding-bottom: 2rem; border-color:#34c1ad;">
     <div class="main-title">
       <h1 class="display" id="page-title">Observatório Uberaba</h1>
-      <!-- CARD.TEXT -->
       <p class="text-justify">
         Este observatório tem como objetivo auxiliar no monitoramento e planejamento das ações em saúde pública para o combate à pandemia da COVID-19. Os dados são atualizados diariamente.
       </p>
       <br>
       <small class="page-subtitle updateDate ml-2">Última atualização: </small>
     </div>
-  </div>
+  </div-->
 
   <!-- Main Card with all data -->
   <div class="card">
 
-    <!-- UBERABA.CARD Vai ser Evolução em Uberaba-->
-    <div class="card" id="uberaba">
+    <!-- Sobre -->
+    <div class="card">
       <div class="card-body">
 
         <!-- CARD.HEADER -->
@@ -124,34 +122,27 @@
           <div class="media-body">
             <!--a href="./municipios.html?aba=aba1" class="text-reset"-->
               <!-- CARD.TITLE.TEXT -->
-              <h2 class="display">Casos de Uberaba</h2>
+              <h2 class="display">Sobre a iniciativa</h2>
             <!--/a-->
-            <p class="card-text">Dados e projeções para o município de Uberaba.</p>
+            <p class="card-text">E quem são os envolvidos?</p>
             <!-- CARD.TITLE.DESCRIPTION -->
           </div>
         </div>
 
-        <!-- Casos acumulados -->
-        <div class="media-body">
+        <!-- Subtitulo caso precise -->
+        <!--div class="media-body">
             <h3 class="card-title">Quantos casos de Covid-19 temos no município de Uberaba?</h3>
-        </div>
-
-        <p class="text-justify mt-3">
-            <ul>
-            <li>No dia de hoje, acumulamos 138 casos notificados.</li>
-            <li>Projeção para dia 29 de Maio: entre 120 e 266 casos notificados.</li>
-            </ul>
-        </p>
+        </div-->
 
         <!-- CARD.IMAGE -->
         <!--a href="./municipios.html"-->
-        <img src="./web/municipios/MG/Uberaba/plot.nowcast.cum.png" class="card-img-top mt-3" alt="Gŕafico mostrando o número de casos acumulados na cidade de Uberaba.">
+        <!--img src="./web/municipios/MG/Uberaba/plot.nowcast.cum.png" class="card-img-top mt-3" alt="Gŕafico mostrando o número de casos acumulados na cidade de Uberaba.">
         <p class="small">
             Estimativas de crescimento exponencial para os próximos 5 dias para o Município de Uberaba.
-        </p>
+        </p-->
         <!--/a-->
         <!-- CARD.TEXT -->
-        <p class="text-justify mt-3">
+        <!--p class="text-justify mt-3">
           <ul class="small">
           <li>Pontos pretos: número de casos confirmados a cada dia.</li>
           <li>Pontos laranjas: a previsão para os próximos 5 dias.</li>
@@ -161,106 +152,15 @@
         <p class="text-justify mt-3">
           É mostrado o número de casos acumulados para o município de Uberaba, MG.
           As projeções são estimadas para os próximos 5 dias.
-        </p>
+        </p-->
 
-        <!-- Número reprodutivo -->
-        <div class="media-body">
-            <h3 class="card-title">Quantas pessoas um infectado contamina na cidade de Uberaba?</h3>
-        </div>
-
-        <p class="text-justify mt-3">
-            <ul>
-            <li>Uma pessoa infectada está contaminando 1.47 pessoas.</li>
-            </ul>
-        </p>
-
-        <!-- CARD.IMAGE -->
-        <!--a href="./municipios.html"-->
-        <img src="./web/municipios/MG/Uberaba/plot_estimate_R0_covid.svg" class="card-img-top mt-3" alt="Gŕafico mostrando o número reprodutivo efetivo (Re) para o Município de Uberaba.">
-        <p class="small">
-            Número reprodutivo efetivo (Re) para o Município de Uberaba.
-        </p>
-        <!--/a-->
         <!-- CARD.TEXT -->
         <p class="text-justify mt-3">
-          <ul class="small">
-          <li>Linha roxa: estimativa de Re em intervalos de 7 dias.</li>
-          <li>Faixa cinza: intervalo de confiança das estimativas.</li>
-          <li>Linha vermelha: Re = 1.</li>
-          </ul>
+            O <a href="https://coviduberaba.github.io" class="text-reset">Observatório Covid-19 Uberaba</a> apresenta previsões de médio prazo feitas
+            utilizando-se um modelo matemático que simula as características epidemiológicas da COVID-19,
+            desenvolvidos pelas equipes <a href="https://github.com/covid19br/covid19br.github.io" class="text-reset">Covid-19BR</a> e <a href="https://covid-19.tacc.utexas.edu" class="text-reset">Covid-19 Modelling Consortium</a>.
         </p>
-        <p class="text-justify mt-3">
-          O número Reprodutivo efetivo (Re) é a média de pessoas contaminadas por um infectado. Valores maiores que 1 indicam que o número de novos casos está aumentando, limite marcado pela linha vermelha. Valores próximos de um indicam um número constante de casos a cada dia. Apenas valores de Re abaixo de um por muitos dias indicam tendência de redução no número de casos. O intervalo de confiança (faixa cinza) tem 95% de chance de incluir o valor real de Re. Os valores de Re da epidemia de Covid-19 baseando-se nos dados estimados de casos graves.
-        </p>
-
-        <!-- CARD.BUTTON >
-        <div class="text-center">
-        <a href="./municipios.html"><button class="btn btn-primary btn-center mt-1" type="button">
-            Saiba mais
-        </button></a>
-        </div-->
-
-      </div>
-    </div>
-
-    <!-- MINAS.CARD -->
-    <div class="card" id="minas">
-      <div class="card-body">
-
-        <!-- CARD.HEADER -->
-        <div class="media">
-          <!-- CARD.TITLE.ICON -->
-          <div class="media-body">
-            <!--a href="./municipios.html?aba=aba1" class="text-reset"-->
-              <!-- CARD.TITLE.TEXT -->
-              <h2 class="display">Casos de Minas Gerais</h2>
-            <!--/a-->
-            <p class="card-text">Dados e projeções para o Estado de Minas Gerais.</p>
-            <!-- CARD.TITLE.DESCRIPTION -->
-          </div>
-        </div>
-
-        <!-- Casos acumulados -->
-        <div class="media-body">
-            <h3 class="card-title">Quantos casos de Covid-19 temos no Estado de Minas?</h3>
-        </div>
-
-        <p class="text-justify mt-3">
-            <ul>
-            <li>No dia de hoje, acumulamos 6668 casos notificados.</li>
-            <li>Projeção para dia 29 de Maio: entre 8483 e 9519 casos notificados.</li>
-            </ul>
-        </p>
-
-        <!-- CARD.IMAGE -->
-        <!--a href="./Estados.html"-->
-        <img src="./web/plot.forecast.exp.mg.png" class="card-img-top mt-3" alt="Gŕafico mostrando o número de casos acumulados na cidade de Uberaba.">
-        <p class="small">
-            Estimativas de crescimento exponencial para os próximos 5 dias para o Estado de Minas Gerais.
-        </p>
-        <!--/a-->
-        <!-- CARD.TEXT -->
-        <p class="text-justify mt-3">
-          <ul class="small">
-          <li>Pontos pretos: número de casos confirmados a cada dia.</li>
-          <li>Pontos laranjas: a previsão para os próximos 5 dias.</li>
-          <li>Cinza: intervalo de confiança dessa previsão.</li>
-          </ul>
-        </p>
-        <p class="text-justify mt-3">
-          É mostrado o número de casos acumulados para o Estado de Minas Gerais.
-          As projeções são estimadas para os próximos 5 dias.
-        </p>
-
-        <!-- Número reprodutivo não tem pronto -->
-
-      </div>
-    </div>
-
-    <!-- BRASIL.CARD -->
-
-    <!-- Sobre -->
-    <div class="card">
+        <p></p>
         <!-- CARD.IMAGE-->
         <div class="row">
             <div class="col-xs-4 col-sm-4">
