@@ -17,7 +17,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Observatorio CSS -->
   <link href="./css/global.css?ver=2.53" rel="stylesheet">
-  <link href="./css/charts.css?ver=2.00" rel="stylesheet">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="https://coviduberaba.github.io/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -49,6 +48,9 @@
 </head>
 
 <body>
+
+  <div id="uberaba"></div>
+
   <!-- Barra Superior -->
   <nav class="navbar navbar-expand-sm navbar-light">
     <!-- BOTAO DO MENU -->
@@ -115,14 +117,13 @@
   <div class="card xl-small">
 
     <!-- UBERABA.CARD Vai ser Evolução em Uberaba-->
-    <div class="card" id="uberaba">
+    <div class="card">
       <div class="card-body">
 
         <!-- CARD.HEADER -->
         <div class="media">
           <!-- CARD.TITLE.ICON -->
           <div class="media-body">
-            <!--a href="./municipios.html?aba=aba1" class="text-reset"-->
               <!-- CARD.TITLE.TEXT -->
               <h2 class="display">Casos de Uberaba</h2>
             <!--/a-->
@@ -178,14 +179,6 @@ Todos os dados foram obtidos da própria Secretária Municipal de Saúde de Uber
 <center>
   <p> Figura 3: Indicadores dos casos de Covid-19 em Uberaba. Clique na imagem para ver o gráfico interativo </p>
 
-<!-- Iframe do google comentado. Agora abre uma nova pagina municipios.html
-<iframe src="https://datastudio.google.com/embed/reporting/1CX1pHjDrbb7X1gEIeVY1sxQp8PziWgpN/page/g6OUB" frameborder="0" style="border:0" data-responsive="true" allowfullscreen></iframe>
-      </p>
-
-Os indicadores
-
-<iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/1eNQdQv-rpu3yne8bvqD71-j8gS44fYts/page/sLUUB" frameborder="0" style="border:0" allowfullscreen></iframe>
--->
         <!-- Número reprodutivo -->
       <div class="media-body">
             <h3 class="card-title">Quantas pessoas um infectado contamina na cidade de Uberaba?</h3>
@@ -197,16 +190,7 @@ Os indicadores
             </ul>
         </p>
 
-        <!-- CARD.IMAGE -->
-        <!--a href="./municipios.html"-->
-        <!--img src="./web/municipios/MG/Uberaba/plot_estimate_R0_covid.svg" class="img-fluid" style="max-height:600px;" alt="Gŕafico mostrando o número reprodutivo efetivo (Re) para o Município de Uberaba.">
-        <p class="small">
-            Número reprodutivo efetivo (Re) para o Município de Uberaba.
-        </p>
-        <!/a-->
         <!-- CARD.TEXT -->
-
-
         <p class="text-justify mt-3">
 O número Reprodutivo efetivo (Re) é a média de pessoas contaminadas por um infectado. Valores maiores que 1 indicam que o número de novos casos está aumentando. Valores próximos de um indicam um número constante de casos a cada dia. Apenas valores de Re abaixo de um por muitos dias indicam tendência de redução no número de casos.
         </p>
@@ -222,21 +206,31 @@ A Taxa de isolamento média de Uberaba é 46%. O Índice de Isolamento Social fo
         <p class="text-center mt-3">
             Figura 4: Taxa de Isolamento de Uberaba. (Fonte: farolcovid.coronacidades.org)
 
-        <!-- CARD.BUTTON >
-        <div class="text-center">
-        <a href="./municipios.html"><button class="btn btn-primary btn-center mt-1" type="button">
-            Saiba mais
-        </button></a>
-        </div-->
-
       </div>
     </div>
-
-
 
     <!-- Sobre -->
     <div class="card">
         <!-- CARD.IMAGE-->
+        <div class="row">
+            <div class="col-xs col-sm">
+                <center><a href="https://ronaldolab.github.io" target="_blank"><img src="./img/logo_ronaldolab.svg" alt="RonaldoLab" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:50px;"></a></center>
+            </div>
+            <div class="col-xs col-sm">
+                <center>
+                <a href="https://michellimaldo.wixsite.com/meusite" target="_blank"><img src="./img/logo_mai.png" alt="MAI" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:40px;"></a></center>
+            </div>
+            <!--div class="col-xs col-sm">
+                <center>
+                <a href="http://www.uftm.edu.br/icene" target="_blank"><img src="./img/logo_ICENE.png" alt="ICENE" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:40px;"></a></center>
+            </div-->
+            <div class="col-xs col-sm">
+                <center>
+                <a href="http://www.uftm.edu.br" target="_blank"><img src="./img/logo_UFTM_vertical.png" alt="UFTM" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:50px;"></a></center>
+            </div>
+
+        </div>
+
         <div class="row">
             <div class="col-xs col-sm">
                 <center>
@@ -248,26 +242,11 @@ A Taxa de isolamento média de Uberaba é 46%. O Índice de Isolamento Social fo
             </div>
             <div class="col-xs col-sm">
                 <center>
-                <a href="http://www.codiub.com.br/codiub/principal" target="_blank"><img src="./img/CODIUB.png" alt="CODIUB" class="img-responsive" style="margin: 12px 0px 20px 0px; border: none; max-height:40px; max-width:65px;"></a></center>
+                <a href="http://www.codiub.com.br" target="_blank"><img src="./img/CODIUB.png" alt="CODIUB" class="img-responsive" style="margin: 12px 0px 20px 0px; border: none; max-height:40px; max-width:65px;"></a></center>
             </div>
             <div class="col-xs col-sm">
                 <center>
-                <a href="http://www.uberaba.mg.gov.br/portal/principal" target="_blank"><img src="./img/Logo PMU.jpg" alt="PMU" class="img-responsive" style="margin: 12px 0px 20px 0px; border: none; max-height:90px; max-width:80px;"></a></center>
-            </div>
-                        <div class="col-xs col-sm">
-                <center><a href="https://ronaldolab.wixsite.com/ronaldolab" target="_blank"><img src="./img/logo_ronaldolab.svg" alt="RonaldoLab" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:50px;"></a></center>
-            </div>
-            <div class="col-xs col-sm">
-                <center>
-                <a href="https://michellimaldo.wixsite.com/meusite" target="_blank"><img src="./img/logo_mai.png" alt="MAI" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:40px;"></a></center>
-            </div>
-            <div class="col-xs col-sm">
-                <center>
-                <a href="http://www.uftm.edu.br/icene" target="_blank"><img src="./img/logo_ICENE.png" alt="ICENE" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:40px;"></a></center>
-            </div>
-            <div class="col-xs col-sm">
-                <center>
-                <a href="http://www.uftm.edu.br" target="_blank"><img src="./img/logo_UFTM_vertical.png" alt="UFTM" class="img-responsive" style="margin: 5px 0px 20px 0px; border: none; max-height:50px;"></a></center>
+                <a href="http://www.uberaba.mg.gov.br" target="_blank"><img src="./img/Logo PMU.jpg" alt="PMU" class="img-responsive" style="margin: 12px 0px 20px 0px; border: none; max-height:90px; max-width:80px;"></a></center>
             </div>
         </div>
     </div>
@@ -304,10 +283,7 @@ A Taxa de isolamento média de Uberaba é 46%. O Índice de Isolamento Social fo
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="./js/updateDate.js"></script>
-  <script>
-    updateDate("last.update.br");
-  </script>
+
   <!-- Default Statcounter code for Observatório Covid-19 Uberaba
 https://coviduberaba.github.io -->
 <script type="text/javascript">
