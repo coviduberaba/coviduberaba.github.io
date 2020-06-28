@@ -1,0 +1,116 @@
+---
+title: "`r paste('Casos de COVID-19 para', nome_titulos)`"
+subtile: "Avaliação preliminar de projeção de casos a curto prazo"
+author: "Observatório COVID-19 Guararapes - Michelli Maldonado e Ronaldo Oliveira"
+date: "`r format(Sys.time(), '%d-%m-%Y_%Hh%Mmin%Ss')`"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+keep_tex: true
+header-includes:
+  - \usepackage{float}
+  - \floatplacement{table}{H}
+  - \floatplacement{figure}{H}
+---
+
+# Sumário executivo
+
+* No dia de hoje acumulamos `r nconf$confirmed.cases[nrow(nconf)]` casos notificados.
+* Projeção para dia `r data.final` : 
+entre `r round(exp.5d[5,2])` e `r round(exp.5d[5,3])` casos notificados.
+* Projeção dia a dia na tabela a seguir
+
+## Projeções de número de casos que serão notificados
+
+```{r projecoes_Poisson}
+
+kable(data.frame(exp.5d),
+      format = "latex",
+      align = "c",
+      digits = 0,
+      col.names = c("Previsto", "Limite Inferior", "Limite Superior"),
+      caption = paste(nome_titulos, "- Projeção empírica do número de casos notificados para os próximos 10 dias."),
+      escape = FALSE
+      )
+
+```
+
+## Gráfico das projeções
+
+* Pontos pretos : número de casos confirmados a cada dia.
+* Pontos laranjas: a previsão para os próximos 5 dias
+* Cinza : intervalo de confiança dessa previsão. 
+
+```{r estimativa_crescimento_exponencial, fig.width = 11,  fig.height = 7, fig.cap = paste("Estimativas de crescimento exponencial para os próximos 5 dias para  o", nome_titulos)}
+################################################################################
+## Parametros de formatacao comum aos plots
+################################################################################
+plot.formatos <- theme_bw()+
+    theme(axis.text= element_text(size=12, face="bold"),
+          axis.title.y = element_text(size=14, face="bold"))
+
+################################################################################
+## Grafico da serie observada e do previsto pelo modelo exponencial
+## para os proximos 5 dias (com intervalo de confiança)
+################################################################################
+## Serie com observados e previstos
+## (gambiarra para ter linha contínua no grafico, verificar help de ggplot.zoo)
+
+ncasos.completa <- merge(casos = nconf.zoo, exp.5d[, c("predito","ic.low","ic.upp")])
+ncasos.completa$casos[time(ncasos.completa) >= min(time(exp.5d))] <- exp.5d$predito[time(exp.5d) >= min(time(exp.5d))]
+## O plot
+
+p1 <-
+    ggplot(data = ncasos.completa) +
+    #geom_ribbon(aes(x = Index, y = casos, ymin = ic.low, ymax = ic.upp)) +
+    geom_line(aes(x = Index, y = casos, ymin = ic.low, ymax = ic.upp)) +
+    geom_point(data = ncasos.completa[time(ncasos.completa) <= min(time(exp.5d))], aes(x = Index, y = casos), size = 2) +
+    geom_point(data = ncasos.completa[time(ncasos.completa) >= min(time(exp.5d))], aes(x = Index, y = casos), size=2, col="#e66101") +
+    scale_x_date(date_breaks = "7 days", date_labels = "%d/%b", name="") +
+    scale_y_continuous() +
+    labs(y = "Número de casos", x = "Data", title = paste(nome_titulos, "(Fonte Dados: Internet)")) +
+    plot.formatos
+plot(p1)
+
+p1.zoom <-
+    ggplot(data = ncasos.completa[(nrow(ncasos.completa) - 7):nrow(ncasos.completa)]) +
+    #geom_ribbon(aes(x = Index, y = casos, ymin = ic.low, ymax = ic.upp)) +
+    geom_line(aes(x = Index, y = casos)) +
+    geom_point(aes(x = Index, y = casos, colour = c("A", "A", "A", "B", "B", "B", "B", "B")), size = 4) +
+    scale_x_date(date_labels = "%d/%b", name="") +
+    scale_y_continuous() +
+    scale_colour_manual(values = c("A" = "black", "B" = "#e66101")) +
+    labs(y = "Número de casos", x = "Data", title = "Últimos 3 dias + Previsão para 5 dias") +
+    plot.formatos +
+    theme(legend.position = "none")
+
+layout <- c(area(t = 2, l = 2, b = 12, r = 12), area(t = 3, l = 3, b = 7, r = 7))
+
+plot(p1.zoom)
+
+p1 +
+ p1.zoom +
+    plot_layout(design = layout)
+
+```
+
+# Detalhes técnicos
+
+Na atual fase da epidemia o número diário de casos confirmados tem
+mostrado uma relação linear com o número de dias transcorridos, em
+escala logarítimica e para pequenos intervalos de tempo.  Usamos essa
+relação observada empiricamente para ajustar uma regressão linear para
+contagens (glm Poisson) aos 10 últimos pontos da série temporal de
+casos notificados.  Com este modelo de regressão projetamos os valores
+para os próximos 10 dias, e um intervalo de confiança da previsão.
+
+## Observatório COVID-19 BR
+
+O Observatório Covid-19 BR é uma iniciativa independente, fruto da
+colaboração entre pesquisadores com o desejo de contribuir para a
+disseminação de informação de qualidade baseada em dados atualizados e
+análises cientificamente embasadas. 
+
+**Contato:** michelli.oliveira@uftm.edu.br
+
+
