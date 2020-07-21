@@ -1,0 +1,248 @@
+<!doctype html> <!-- HTML 5 doctype -->
+<html lang="pt">
+
+<head>
+  <!-- Description meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="O Observatório Covid-19 Uberaba é uma iniciativa para disseminar informações de qualidade sobre o coronavírus, baseada em dados científicos atualizados de nossa cidade. É uma colaboração dos laboratórios da UFTM, ronaldolab (Laboratório de Biofísica Teórica, DF) e MAI (Matemática Aplicaca à Inovação, DM).">
+  <title>Observatório Covid-19 Uberaba</title>
+
+  <!-- Bootstrap CSS via BootstrapCDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Observatorio CSS -->
+  <link href="./css/global.css?ver=2.53" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://coviduberaba.github.io/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="https://coviduberaba.github.io/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://coviduberaba.github.io/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="https://coviduberaba.github.io/img/favicons/manifest.json">
+  <link rel="icon" href="https://coviduberaba.github.io/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="https://coviduberaba.github.io/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#007bff">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Observatório Covid-19 BR">
+  <meta name="twitter:description"
+    content="Grupo de cientistas brasileiros com um objetivo: espalhar ciência e conter o vírus!">
+  <meta name="twitter:image" content="https://coviduberaba.github.io/img/favicons/observatorio-social.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://coviduberaba.github.io">
+  <meta property="og:title" content="Observatório Covid-19 BR">
+  <meta property="og:description"
+    content="Grupo de cientistas brasileiros com um objetivo: espalhar ciência e conter o vírus!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://coviduberaba.github.io/img/favicons/observatorio-social.png">
+  <meta property="og:image:secure_url" content="https://coviduberaba.github.io/img/favicons/observatorio-social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+</head>
+
+<body>
+  <!-- Barra Superior -->
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <!-- BOTAO DO MENU -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="./index.html">
+      <img class="navbar-logo" src="https://coviduberaba.github.io/img/logo.svg"></img> <!-- OBSERV.LOGO.IMAGEM -->
+    </a>
+
+    <!-- DESTAQUE -->
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-sm-none" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!--nav-item destaque-->
+      <a href="#">
+        Observatório Uberaba - MG
+      </a>
+    </div>
+
+    <!-- MENU -->
+    <div class="navbar-collapse main-menu-item collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav d-md-inline-flex"> <!--mr-auto-->
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#uberaba">Uberaba</a>
+        </li>
+      <!--  <li class="nav-item">
+          <a class="nav-link" href="./index.html#minas">Minas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#brasil">Brasil</a>
+        </li>-->
+        <li class="nav-item dropdown" style="border: none; padding: 0 0 0">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COVID19</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./covid.html">Definição</a>
+              <a class="dropdown-item" href="./sintomas.html">Sintomas</a>
+              <a class="dropdown-item" href="./diagnostico.html">Diagnóstico</a>
+              <a class="dropdown-item" href="./transmissao.html">Transmissão</a>
+            </div>
+        </li>
+    <!--    <li class="nav-item">
+          <a class="nav-link" href="./modelos.html">Modelos</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="./sobre.html">Sobre</a>
+        </li>
+        <!-- MENU.ITEM -->
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- Topo -->
+  <!--div class="container-fluid main-title-bg" style="padding-bottom: 2rem; border-color:#34c1ad;">
+    <div class="main-title">
+      <h1 class="display" id="page-title">Observatório Uberaba</h1>
+      <p class="text-justify">
+        Este observatório tem como objetivo auxiliar no monitoramento e planejamento das ações em saúde pública para o combate à pandemia da COVID-19. Os dados são atualizados diariamente.
+      </p>
+      <br>
+      <small class="page-subtitle updateDate ml-2">Última atualização: </small>
+    </div>
+  </div-->
+
+  <!-- Main Card with all data -->
+  <div class="card xl-small">
+
+    <!-- Sobre -->
+    <div class="card">
+      <div class="card-body">
+
+        <!-- CARD.HEADER -->
+        <div class="media">
+          <!-- CARD.TITLE.ICON -->
+          <div class="media-body">
+            <!--a href="./municipios.html?aba=aba1" class="text-reset"-->
+              <!-- CARD.TITLE.TEXT -->
+              <h2 class="display">Transmissão pelo ar</h2>
+            <!--/a-->
+                      <!-- CARD.TITLE.DESCRIPTION -->
+          </div>
+        </div>
+
+  <!-- CARD.TEXT -->
+        <p class="text-justify mt-3">
+        A Organização Mundial da Saúde (OMS) reconheceu no dia 07 de julho de 2020 que há evidências da transmissão do novo coronavírus pelo ar, entretanto afirmou também que novos estudos precisam ser realizados para comprovar esta forma de transmissão.
+          <br>
+          <br>
+          Sabe-se que ao tossir, espirrar e conversar as pessoas emitem uma grande quantidade de gotículas de diversos tamanhos. As gotículas de saliva são partículas maiores, medindo cerca de 1 a 5 mm. Essas depositam-se em superfícies e não alcançam grandes distâncias, espalhando-se em um espaço de cerca de 1 a 2 m da fonte de infecção. Entretanto, existem partículas ainda menores chamadas aerossóis, que podem se espalhar por centenas de metros ou mais e são capazes de permanecer em suspensão no ar por períodos prolongados.
+        </p>
+        <br>
+        <br>
+  <!-- CARD. IMAGEM -->
+      <center style="border-radius: 5px; padding: 0.5em 0em 0.5em 0;">
+      <img src="./img/transmissao.png" class="img-fluid" style="max-height:600px;" alt="Transmissão pelo ar.">
+</center>
+      <p class="text-center mt-3">
+          Figura 1: Transmissão pelo ar
+         </p>
+        
+      <p class="text-justify mt-3">
+       Ao contrário do que muitos pensam, o aerossol, em seus diversos formatos, não é gasoso. São partículas sólidas ou líquidas que se encontram suspensas em um meio gasoso (geralmente o ar). Estudos demonstram que bactérias podem ser transmitidas por aerossóis e que algumas viroses como rubéola e varicela possuem esta via de transmissão.
+        <br>
+        <br>
+        A OMS afirmava que a transmissão da Covid-19 ocorria apenas pelas gotículas geradas quando os pacientes tossem ou espirram, seja pelo contato direto, seja pela precipitação em alguma superfície.
+      <br>
+      <br>
+      Entretanto, um estudo publicado em junho de 2020, mostrou que as pequenas gotículas liberadas por meio das falas podem conter vírus. A análise foi realizada em pacientes com a doença e em portadores assintomáticos (aqueles que estão contaminados pelo vírus, mas não possuem sintomas). A metodologia experimental utilizada para este estudo analisa as partículas no ar e a duração que elas permanecem no mesmo. Esta visualização direta demonstrou que ao falar as pessoas geram gotículas que são espalhadas pelo ar e podem ficar suspensas por cerca de 10 minutos ou mais. Assim, pode se considerar que é possível a transmissão do vírus pelo ar em ambientes fechados.
+      <br>
+      <br>
+      Um outro estudo realizado em Pequim investigou cerca de 10 rotas de transmissão possíveis em 35 pacientes com Covid-19. Foram coletadas 298 amostras, incluindo 26 amostras de ar e 242 swab de superfícies (coleta do material por meio de cotonete estéril). Os resultados mostraram que pacientes com Covid-19 exalaram vírus pelo ar. Mostrou também que as superfícies analisadas em banheiros e no chão são importantes reservatórios do vírus, confirmando a ideia de que o vírus permanece em superfícies. Então concluíram que a transmissão pelo ar é um dos modos importantes principalmente nos estágios iniciais da doença.
+      <br>
+      <br>
+      Portanto, estes estudos reforçam a recomendação do uso de máscaras e a ventilação de todos os ambientes.
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+      </p>
+      
+      <div class="media">
+          <div class="media-body" style="background: #ffffff; border: 2px solid #ffffff; border-radius: 5px; padding: 2em 1.5em 2em 1.5em;">            
+                        <p class="text-right" style="font-family: Cambria;font-size:150%;background: #d5f5f4;/* border: solid #d5f5f4; */border-radius: 5px;padding: 1em 1em 0 1em; margin: 0rem"><b>Fontes: </b></p>
+              <p class="text-justify" style="background: #d5f5f4;border: 2px solid #d5f5f4;border-radius: 5px;padding: 0.5em 0.5em 1.5em 0.5em ;margin: 0rem;">
+          1.Cole EC, Cook CE. Characterization of infectious aerosols in health care facilities: an aid to effective engineering controls and preventive strategies. Am J Infect Control. 1998;26(4):453-464.
+          <br>
+          <br>      
+          2. Stadnytskyi V, Bax CE, Bax A, Anfinrud P. The airborne lifetime of small speech droplets and their potential importance in SARS-CoV-2 transmission. Proc Natl Acad Sci U S A. 2020;117(22):11875-11877.
+          <br>
+          <br>
+          3. Ma J, Qi X, Chen H, Li X, Zhang Z, Wang H et al. Exhaled breath is a significant source of SARS-CoV-2 emission (em publicação).
+          <br>
+          <br>
+          4. Wang, J., Du, G. COVID-19 may transmit through aerosol. Ir J Med Sci (2020). https://doi.org/10.1007/s11845-020-02218-2
+            </p>
+        </div>
+        </div>
+     
+
+  <!-- Footer -->
+  <footer class="container-fluid">
+    <!-- FOOTER.ITEM -->
+    <div class="footer-content">
+      <img src="img/icon_github.svg" width="16px">
+      <small class="mb-0 ml-1"><a href="https://github.com/coviduberaba/coviduberaba.github.io" target="_blank" rel="noopener"
+          class="text-reset">Source Code</a></small>
+    </div>
+
+    <!-- FOOTER.ITEM -->
+    <div class="footer-content">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">
+        <img alt="Licença Creative Commons" height="20px" style="margin-right: .35rem;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/>
+      </a>
+      <small id="license">
+        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Observatório Covid-19 Uberaba</span> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Creative Commons - Atribuição-NãoComercial 4.0 Internacional</a>.
+      </small>
+    </div>
+
+  </footer>
+
+  <!-- JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS via BootstrapCDN-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Default Statcounter code for Observatório Covid-19 Uberaba
+https://coviduberaba.github.io -->
+<script type="text/javascript">
+var sc_project=12330931;
+var sc_invisible=1;
+var sc_security="8e736809";
+var sc_https=1;
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12330931/0/8e736809/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+<!-- SCRIPT PARA USAR MATHJAX E ESCREVER EQUAÇÕES -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>
