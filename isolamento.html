@@ -1,0 +1,244 @@
+<!doctype html> <!-- HTML 5 doctype -->
+<html lang="pt">
+
+<head>
+  <!-- Description meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="O Observatório Covid-19 Uberaba é uma iniciativa para disseminar informações de qualidade sobre o coronavírus, baseada em dados científicos atualizados de nossa cidade. É uma colaboração dos laboratórios da UFTM, ronaldolab (Laboratório de Biofísica Teórica, DF) e MAI (Matemática Aplicaca à Inovação, DM).">
+  <title>Observatório Covid-19 Uberaba</title>
+
+  <!-- Bootstrap CSS via BootstrapCDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Observatorio CSS -->
+  <link href="./css/global.css?ver=2.53" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://coviduberaba.github.io/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="https://coviduberaba.github.io/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://coviduberaba.github.io/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="https://coviduberaba.github.io/img/favicons/manifest.json">
+  <link rel="icon" href="https://coviduberaba.github.io/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="https://coviduberaba.github.io/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#007bff">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Observatório Covid-19 Uberaba">
+  <meta name="twitter:description"
+    content="Grupo de cientistas uberabenses com um objetivo: espalhar ciência e conter o vírus!">
+  <meta name="twitter:image" content="https://coviduberaba.github.io/img/favicons/observatorio-social.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://coviduberaba.github.io">
+  <meta property="og:title" content="Observatório Covid-19 Uberaba">
+  <meta property="og:description"
+    content="Grupo de cientistas uberabenses com um objetivo: espalhar ciência e conter o vírus!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://coviduberaba.github.io/img/favicons/observatorio-social.png">
+  <meta property="og:image:secure_url" content="https://coviduberaba.github.io/img/favicons/observatorio-social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+</head>
+
+<body>
+  <!-- Barra Superior -->
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <!-- BOTAO DO MENU -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="./index.html">
+      <img class="navbar-logo" src="https://coviduberaba.github.io/img/logo.svg"></img> <!-- OBSERV.LOGO.IMAGEM -->
+    </a>
+
+    <!-- DESTAQUE -->
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-sm-none" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!--nav-item destaque-->
+      <a href="#">
+        Observatório Uberaba - MG
+      </a>
+    </div>
+
+    <!-- MENU -->
+    <div class="navbar-collapse main-menu-item collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav d-md-inline-flex"> <!--mr-auto-->
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#uberaba">Uberaba</a>
+        </li>
+      <!--  <li class="nav-item">
+          <a class="nav-link" href="./index.html#minas">Minas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#brasil">Brasil</a>
+        </li>-->
+        <li class="nav-item dropdown" style="border: none; padding: 0 0 0">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COVID19</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./covid.html">Definição</a>
+              <a class="dropdown-item" href="./sintomas.html">Sintomas</a>
+              <a class="dropdown-item" href="./diagnostico.html">Diagnóstico</a>
+              <a class="dropdown-item" href="./transmissao.html">Transmissão</a>
+              <a class="dropdown-item" href="./isolamento.html">Distanciamento Social</a>
+            </div>
+        </li>
+    <!--    <li class="nav-item">
+          <a class="nav-link" href="./modelos.html">Modelos</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="./sobre.html">Sobre</a>
+        </li>
+        <!-- MENU.ITEM -->
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- Topo -->
+  <!--div class="container-fluid main-title-bg" style="padding-bottom: 2rem; border-color:#34c1ad;">
+    <div class="main-title">
+      <h1 class="display" id="page-title">Observatório Uberaba</h1>
+      <p class="text-justify">
+        Este observatório tem como objetivo auxiliar no monitoramento e planejamento das ações em saúde pública para o combate à pandemia da COVID-19. Os dados são atualizados diariamente.
+      </p>
+      <br>
+      <small class="page-subtitle updateDate ml-2">Última atualização: </small>
+    </div>
+  </div-->
+
+  <!-- Main Card with all data -->
+  <div class="card xl-small">
+
+    <!-- Sobre -->
+    <div class="card">
+      <div class="card-body">
+
+        <!-- CARD.HEADER -->
+        <div class="media">
+          <!-- CARD.TITLE.ICON -->
+          <div class="media-body">
+            <!--a href="./municipios.html?aba=aba1" class="text-reset"-->
+              <!-- CARD.TITLE.TEXT -->
+              <h2 class="display">A importância do distanciamento no Brasil</h2>
+            <!--/a-->
+                      <!-- CARD.TITLE.DESCRIPTION -->
+          </div>
+        </div>
+
+  <!-- CARD.TEXT -->
+        <p class="text-justify mt-3">
+       Um estudo demonstrou que no Brasil não ocorreram evidências de transmissão comunitária antes do primeiro caso diagnosticado no dia 25 de fevereiro de 2020. Este foi o primeiro caso da América Latina.
+          <br>
+          <br>
+A transmissão comunitária pode ser definida com a ocorrência de casos sem vínculo a um caso confirmado, onde não é possível saber qual a origem da infecção, se foi transmitida por pessoas que realizaram ou não viagens para o exterior.
+        <br>
+        <br>
+  Por meio da análise das sequências dos vírus, foi possível mapear que a maioria dos vírus foram introduzidos no Brasil diretamente em estados que possuem aeroportos com conexões internacionais: São Paulo, Minas Gerais, Ceará e Rio de Janeiro e as sequências são similares aquelas encontradas na Europa e foram introduzidas entre os dias 22 e 27 fevereiro de 2020. Portanto, o vírus foi trazido ao Brasil antes das medidas de isolamento e proibições de viagens aéreas. Apesar da redução das viagens aéreas, o estudo mostrou mobilidade de pessoas, por meio das viagens, pode coincidir com a disseminação do vírus dos grandes centros urbanos para o restante do país. Por isso, a vinculação de algumas grandes capitais como epicentro da doença, ou seja, por medidas de mobilidade humana, o vírus foi se espalhando pelas cidades do interior do país.
+        <br>
+        <br>
+   Como não há até o momento, medidas farmacológicas para a erradicação da doença, visto que ainda não temos um medicamento específico, foram utilizadas medidas de isolamento social para tentar conter o avanço da mesma. Entre as medidas para a contenção da doença, as escolas foram fechadas entre os dias 12 e 23 de março de 2020 nos 27 estados da federação. Na cidade de São Paulo, por exemplo, as escolas foram fechadas no dia 16 de março e o comércio foi fechado 04 dias depois. Tal medida se mostrou eficaz pois mostrou mudanças na taxa de transmissibilidade da doença. No início da pandemia, esta taxa nas cidades São Paulo e no Rio de Janeiro era maior que 3, a partir das medidas de isolamento esta taxa caiu para abaixo de 01.
+      <br>
+      <br>
+   Com as recentes medidas de relaxamento do isolamento social adotadas no país, é necessária uma vigilância contínua para monitorar as tendências de transmissão e a introdução de novas linhagens no Brasil.   
+      <br>
+      <br>
+   A importância do distanciamento social também é reforçada por um estudo recente que analisou 508 soldados suíços. Para este estudo, os soldados foram divididos em 3 grupos. Os grupos 2 e 3 dividiram as mesmas bases e os soldados tiveram contatos, dividindo a mesma cozinha e as mesmas áreas comuns. Os soldados do grupo número 01 não dividiram as mesmas bases, as quais foram separadas por aproximadamente 3 quilômetros, e mantiveram contato mínimo no período do estudo. Passados 54 dias de observação, 29% dos soldados dos grupos 2 e 3 apresentaram a doença e nenhum soldado do grupo 01 apresentou a infecção.   
+      <br>
+      <br>
+   Quando a doença foi detectada nos grupos 2 e 3 os soldados mantiveram a distância de 02 metros um do outro, passaram a utilizar máscaras faciais e mantiveram a distância entre as camas para o repouso e entre as alimentações.
+       <br>
+       <br>
+   Portanto, o estudo também demonstrou que o isolamento pode diminuir a propagação da doença.
+       <br>
+       <br>
+   Reforçando que medidas como distanciamento social:
+   <ul>
+    <li> Uso de máscaras faciais e medidas de higiene reduzem a taxa de infecção por meio da redução de transferência de vírus respiratórios </li>
+    <li> Estas medidas também podem diminuir quantitativamente a quantidade de vírus transmitida; </li>
+    <li> Sabe-se que o contato com uma maior quantidade de vírus pode levar ao paciente a desenvolver quadros mais graves da doença (inflamação mais rápida e séria). </li>
+    </ul>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+      </p>
+      
+      <div class="media">
+          <div class="media-body" style="background: #ffffff; border: 2px solid #ffffff; border-radius: 5px; padding: 2em 1.5em 2em 1.5em;">            
+                        <p class="text-right" style="font-family: Cambria;font-size:150%;background: #d5f5f4;/* border: solid #d5f5f4; */border-radius: 5px;padding: 1em 1em 0 1em; margin: 0rem"><b>Fontes: </b></p>
+              <p class="text-justify" style="background: #d5f5f4;border: 2px solid #d5f5f4;border-radius: 5px;padding: 0.5em 0.5em 1.5em 0.5em ;margin: 0rem;">
+          1. Bielecki M, Züst R, Siegrist D, et al. Social distancing alters the clinical course of COVID-19 in young adults: A comparative cohort study [published online ahead of print, 2020 Jun 29]. Clin Infect Dis. 2020.
+          <br>
+          <br>
+          2. Candido DS, Claro IM, de Jesus JG, et al. Evolution and epidemic spread of SARS-CoV-2 in Brazil [published online ahead of print, 2020 Jul 23]. Science. 2020.
+            </p>
+        </div>
+        </div>
+     
+
+  <!-- Footer -->
+  <footer class="container-fluid">
+    <!-- FOOTER.ITEM -->
+    <div class="footer-content">
+      <img src="img/icon_github.svg" width="16px">
+      <small class="mb-0 ml-1"><a href="https://github.com/coviduberaba/coviduberaba.github.io" target="_blank" rel="noopener"
+          class="text-reset">Source Code</a></small>
+    </div>
+
+    <!-- FOOTER.ITEM -->
+    <div class="footer-content">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">
+        <img alt="Licença Creative Commons" height="20px" style="margin-right: .35rem;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/>
+      </a>
+      <small id="license">
+        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Observatório Covid-19 Uberaba</span> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Creative Commons - Atribuição-NãoComercial 4.0 Internacional</a>.
+      </small>
+    </div>
+
+  </footer>
+
+  <!-- JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS via BootstrapCDN-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Default Statcounter code for Observatório Covid-19 Uberaba
+https://coviduberaba.github.io -->
+<script type="text/javascript">
+var sc_project=12330931;
+var sc_invisible=1;
+var sc_security="8e736809";
+var sc_https=1;
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12330931/0/8e736809/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+<!-- SCRIPT PARA USAR MATHJAX E ESCREVER EQUAÇÕES -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+
+</body>
+
+</html>
