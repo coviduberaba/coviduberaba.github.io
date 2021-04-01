@@ -46,6 +46,17 @@
       <meta property="og:image:type" content="image/png">
       <meta property="og:image:width" content="1200">
       <meta property="og:image:height" content="630">
+      <style>
+        #grafico {
+          height: 850px;
+          border: 0;
+        }
+        @media (max-width: 480px) {
+          #grafico{
+            height: 250px;
+          }
+        }
+      </style>
     </head>    
 <body>
     <div id="uberaba"></div>
@@ -119,9 +130,9 @@
     </div>
   </div>
 
-  <iframe width="100%" height="100%" src="https://datastudio.google.com/embed/reporting/e0699a5b-9af6-44d7-9849-44f4f13d7ebf/page/2CI6B" frameborder="0" style="border:0; height: 900px;" allowfullscreen></iframe>
-
-    <div class="card">
+  <iframe id="grafico" width="100%" height="100%" src="https://datastudio.google.com/embed/reporting/e0699a5b-9af6-44d7-9849-44f4f13d7ebf/page/2CI6B" frameborder="0" allowfullscreen></iframe>
+    
+  <div class="card">
         <!-- CARD.IMAGE-->
         <div class="row">
             <div class="col-xs col-sm">
